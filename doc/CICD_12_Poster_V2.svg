@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="55cm" height="80cm" viewBox="7 1 1096 1588" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <text font-size="45.1556" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="548" y="43.25">
+    <tspan x="548" y="43.25">Music Style Analysis Using</tspan>
+    <tspan x="548" y="99.6944">The Random Forest Algorithm</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:end;font-family:sans-serif;font-style:normal;font-weight:700" x="1100" y="131.25">
+    <tspan x="1100" y="131.25">Andrés Gómez de SIlva Garza</tspan>
+    <tspan x="1100" y="155.944">Emir Herrera González</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:700" x="548" y="190.25">
+    <tspan x="548" y="190.25">Instituto Tecnológico Autónomo de México (ITAM)</tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 66 308.167 C 119.6,296.604 146.4,292.75 200,292.75 C 253.6,292.75 280.4,296.604 334,308.167 L 334,369.833 C 280.4,381.396 253.6,385.25 200,385.25 C 146.4,385.25 119.6,381.396 66,369.833 L 66,308.167"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 66 308.167 C 119.6,319.729 146.4,323.583 200,323.583 C 253.6,323.583 280.4,319.729 334,308.167"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="200" y="350.708">
+      <tspan x="200" y="350.708">MIDI_Collection_Style_of_Interest</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="453.362,356.25 672.29,356.25 652.636,410.25 433.708,410.25 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="552.999" y="387.15">
+      <tspan x="552.999" y="387.15">midiCollection</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="331.8,437.392 386.4,437.392 386.4,386 431.264,386 "/>
+    <polygon style="fill: #000000" points="438.764,386 428.764,391 431.264,386 428.764,381 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="438.764,386 428.764,391 431.264,386 428.764,381 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="334,331.292 391.224,331.292 391.224,369.75 438.713,369.75 "/>
+    <polygon style="fill: #000000" points="446.213,369.75 436.213,374.75 438.713,369.75 436.213,364.75 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="446.213,369.75 436.213,374.75 438.713,369.75 436.213,364.75 "/>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="308.024" y="720.25" width="473.95" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="544.999" y="743.15">
+      <tspan x="544.999" y="743.15">waveletsCoefficients[i] ← DiscreteWaveletTransform(midiCollection[i])</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="543.712,615.378 592.385,654.535 543.712,693.692 495.04,654.535 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="543.712" y="658.435">
+      <tspan x="543.712" y="658.435">i &lt;= n</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="361.824" y="1222" width="366.35" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="544.999" y="1244.9">
+      <tspan x="544.999" y="1244.9">forest ← GrowForest(markovTraining)</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="319.628" y="1345.5" width="451.372" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="545.314" y="1368.4">
+      <tspan x="545.314" y="1368.4">randomForestClassification ← ClassifySamples(forest, markovTest)</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="444.636,1436.5 646.01,1436.5 624.172,1496.5 422.798,1496.5 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="534.404" y="1470.4">
+      <tspan x="534.404" y="1470.4">randomForestClassification</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="544.999,1260 544.999,1302.75 545.314,1302.75 545.314,1335.76 "/>
+    <polygon style="fill: #000000" points="545.314,1343.26 540.314,1333.26 545.314,1335.76 550.314,1333.26 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="545.314,1343.26 540.314,1333.26 545.314,1335.76 550.314,1333.26 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="545.314,1384.51 545.314,1410.5 545.323,1410.5 545.323,1426.76 "/>
+    <polygon style="fill: #000000" points="545.323,1434.26 540.323,1424.26 545.323,1426.76 550.323,1424.26 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="545.323,1434.26 540.323,1424.26 545.323,1426.76 550.323,1424.26 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="720" y="344.75">
+    <tspan x="720" y="344.75"></tspan>
+  </text>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="367.15" y="457.75" width="353.7" height="118"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="544" y="488.65">
+      <tspan x="544" y="488.65">n1 ← length(MIDI_Collection_Style_of_Interest)</tspan>
+      <tspan x="544" y="504.65">n2 ← length(MIDI_Collection_Non-Style_of_interest)</tspan>
+      <tspan x="544" y="520.65">n3 ← MIDI_Collection_Control_Samples)</tspan>
+      <tspan x="544" y="536.65">n ← n1 + n2 +n3</tspan>
+      <tspan x="544" y="552.65">i ← 1</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="509.276" y="1120.75" width="71.45" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="545.001" y="1143.65">
+      <tspan x="545.001" y="1143.65">i ← i+1</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="592.384,654.536 796,654.536 796,1195.5 545,1195.5 545,1212.26 "/>
+    <polygon style="fill: #000000" points="545,1219.76 540,1209.76 545,1212.26 550,1209.76 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="545,1219.76 540,1209.76 545,1212.26 550,1209.76 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="545,1158.75 545,1175.5 293,1175.5 293,654.536 485.304,654.536 "/>
+    <polygon style="fill: #000000" points="492.804,654.536 482.804,659.536 485.304,654.536 482.804,649.536 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="492.804,654.536 482.804,659.536 485.304,654.536 482.804,649.536 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 544.025 285 L 581.975,285 C 587.215,285 591.463,293.954 591.463,305 C 591.463,316.046 587.215,325 581.975,325 L 544.025,325 C 538.786,325 534.538,316.046 534.538,305 C 534.538,293.954 538.786,285 544.025,285"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="563" y="309">
+      <tspan x="563" y="309">Start</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="563,325 563,340.625 562.826,340.625 562.826,346.514 "/>
+    <polygon style="fill: #000000" points="562.826,354.014 557.826,344.014 562.826,346.514 567.826,344.014 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="562.826,354.014 557.826,344.014 562.826,346.514 567.826,344.014 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 507.826 1544 L 538.175,1544 C 542.366,1544 545.763,1552.95 545.763,1564 C 545.763,1575.05 542.366,1584 538.175,1584 L 507.826,1584 C 503.635,1584 500.238,1575.05 500.238,1564 C 500.238,1552.95 503.635,1544 507.826,1544"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="523" y="1568">
+      <tspan x="523" y="1568">End</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="523.485,1496.5 523.485,1520.25 523,1520.25 523,1534.26 "/>
+    <polygon style="fill: #000000" points="523,1541.76 518,1531.76 523,1534.26 528,1531.76 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="523,1541.76 518,1531.76 523,1534.26 528,1531.76 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="543.712" y1="693.692" x2="544.527" y2="710.525"/>
+    <polygon style="fill: #000000" points="544.89,718.017 539.412,708.27 544.527,710.525 549.4,707.786 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="544.89,718.017 539.412,708.27 544.527,710.525 549.4,707.786 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="544.998" y1="758.25" x2="544.921" y2="786.338"/>
+    <polygon style="fill: #000000" points="544.9,793.838 539.928,783.824 544.921,786.338 549.928,783.852 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="544.9,793.838 539.928,783.824 544.921,786.338 549.928,783.852 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="544" y1="575.75" x2="543.783" y2="605.642"/>
+    <polygon style="fill: #000000" points="543.728,613.142 538.801,603.106 543.783,605.642 548.801,603.179 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="543.728,613.142 538.801,603.106 543.783,605.642 548.801,603.179 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="543.172" y1="410.25" x2="543.83" y2="448.015"/>
+    <polygon style="fill: #000000" points="543.961,455.514 538.787,445.603 543.83,448.015 548.786,445.429 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="543.961,455.514 538.787,445.603 543.83,448.015 548.786,445.429 "/>
+  </g>
+  <g>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="544.893,796.074 606.067,847.947 544.893,899.821 483.72,847.947 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="544.893" y="851.847">
+      <tspan x="544.893" y="851.847">i&lt;=n1+n2</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="339.85" y="931.5" width="410.3" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="545" y="954.4">
+      <tspan x="545" y="954.4">markovTraining[i] ← MarkovTree(waveletsCoefficients[i])</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="329.7" y="1043.5" width="430.6" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="545" y="1066.4">
+      <tspan x="545" y="1066.4">markovTest[i - (n1 + n2)] ← MarkovTree(waveletsCoefficients[i])</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="544.894" y1="899.82" x2="544.967" y2="921.764"/>
+    <polygon style="fill: #000000" points="544.993,929.264 539.959,919.281 544.967,921.764 549.959,919.247 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="544.993,929.264 539.959,919.281 544.967,921.764 549.959,919.247 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="606.066,847.948 606.066,848.5 765,848.5 765,1009.5 545,1009.5 545,1033.76 "/>
+    <polygon style="fill: #000000" points="545,1041.26 540,1031.26 545,1033.76 550,1031.26 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="545,1041.26 540,1031.26 545,1033.76 550,1031.26 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="545,969.5 545,985.5 318,985.5 318,1139.75 499.54,1139.75 "/>
+    <polygon style="fill: #000000" points="507.04,1139.75 497.04,1144.75 499.54,1139.75 497.04,1134.75 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="507.04,1139.75 497.04,1144.75 499.54,1139.75 497.04,1134.75 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="545" y1="1081.5" x2="545" y2="1111.01"/>
+    <polygon style="fill: #000000" points="545,1118.51 540,1108.51 545,1111.01 550,1108.51 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="545,1118.51 540,1108.51 545,1111.01 550,1108.51 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="770.602" y1="382.783" x2="672.2" y2="383.208"/>
+    <polygon style="fill: #000000" points="664.7,383.24 674.678,378.197 672.2,383.208 674.722,388.197 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="664.7,383.24 674.678,378.197 672.2,383.208 674.722,388.197 "/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="680" y="225">
+    <tspan x="680" y="225">Algorithm:</tspan>
+    <tspan x="680" y="246.167">      1. Show positive and negative examples.</tspan>
+    <tspan x="680" y="267.333">      2. Extract frequency data.</tspan>
+    <tspan x="680" y="288.5">      3. Perform statistical analysis.</tspan>
+    <tspan x="680" y="309.667">      4. Apply learning algorithm.</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="7" y="733.25">
+    <tspan x="7" y="733.25">Discrete Wavelet Transform</tspan>
+    <tspan x="7" y="754.417">for frequency analysis.</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="8" y="998.25">
+    <tspan x="8" y="998.25">Markov Tree as statistical model</tspan>
+    <tspan x="8" y="1019.42">of frequency distributions.</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:DejaVu Serif;font-style:normal;font-weight:normal" x="804" y="668.75">
+    <tspan x="804" y="668.75">• 120 Tárrega exemplars</tspan>
+    <tspan x="804" y="693.444">• 110 Non-Tárrega examplars</tspan>
+    <tspan x="804" y="718.139">• Separated into training</tspan>
+    <tspan x="804" y="742.833">   (100/100) and testing</tspan>
+    <tspan x="804" y="767.528">   (20/10) subsets</tspan>
+    <tspan x="804" y="792.222">• Testing samples evaluated</tspan>
+    <tspan x="804" y="816.917">   20 times</tspan>
+    <tspan x="804" y="841.611"></tspan>
+    <tspan x="804" y="866.306">• 99.5% average accuracy for</tspan>
+    <tspan x="804" y="891">   Tárrega testing set</tspan>
+    <tspan x="804" y="915.694">• 93.97% for non-Tárrega</tspan>
+    <tspan x="804" y="940.389">   testing set</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="8" y="1233">
+    <tspan x="8" y="1233">Random Forest Algorithm</tspan>
+    <tspan x="8" y="1254.17">for decision tree learning.</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="8" y="1360.5">
+    <tspan x="8" y="1360.5">Use of decision forest</tspan>
+    <tspan x="8" y="1381.67">to classify samples.</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="44" y="224.5">
+    <tspan x="44" y="224.5">Objective:</tspan>
+    <tspan x="44" y="245.667">      Autonomously learning to distingish musical style.</tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 63.8 414.267 C 117.4,402.704 144.2,398.85 197.8,398.85 C 251.4,398.85 278.2,402.704 331.8,414.267 L 331.8,475.933 C 278.2,487.496 251.4,491.35 197.8,491.35 C 144.2,491.35 117.4,487.496 63.8,475.933 L 63.8,414.267"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 63.8 414.267 C 117.4,425.829 144.2,429.683 197.8,429.683 C 251.4,429.683 278.2,425.829 331.8,414.267"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="197.8" y="456.808">
+      <tspan x="197.8" y="456.808">MIDI_Collection_Non-Style_of_Interest</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 771.6 351.367 C 825.2,339.804 852,335.95 905.6,335.95 C 959.2,335.95 986,339.804 1039.6,351.367 L 1039.6,413.033 C 986,424.596 959.2,428.45 905.6,428.45 C 852,428.45 825.2,424.596 771.6,413.033 L 771.6,351.367"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 771.6 351.367 C 825.2,362.929 852,366.783 905.6,366.783 C 959.2,366.783 986,362.929 1039.6,351.367"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="905.6" y="393.908">
+      <tspan x="905.6" y="393.908">MIDI_Collection_Test_Samples</tspan>
+    </text>
+  </g>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:DejaVu Serif;font-style:normal;font-weight:700" x="804" y="624.5">
+    <tspan x="804" y="624.5">Experiments and results:</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:DejaVu Serif;font-style:normal;font-weight:normal" x="803.8" y="1143.15">
+    <tspan x="803.8" y="1143.15">• High accuracy, better than</tspan>
+    <tspan x="803.8" y="1167.84">   similar projects</tspan>
+    <tspan x="803.8" y="1192.54">• Application: detecting</tspan>
+    <tspan x="803.8" y="1217.23">   forgeries</tspan>
+    <tspan x="803.8" y="1241.93">• Application: autonomous</tspan>
+    <tspan x="803.8" y="1266.62">   generation of music</tspan>
+    <tspan x="803.8" y="1291.32">   imitation</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:DejaVu Serif;font-style:normal;font-weight:700" x="803.8" y="1082.9">
+    <tspan x="803.8" y="1082.9">Discussion and future</tspan>
+    <tspan x="803.8" y="1107.59">work:</tspan>
+  </text>
+  <image x="875" y="1515.75" width="225" height="72" xlink:href="file:///home/shanti/Pictures/logo-ITAM.jpg"/>
+</svg>
