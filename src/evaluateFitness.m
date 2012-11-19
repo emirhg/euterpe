@@ -5,7 +5,7 @@ function [ fitness ] = evaluateFitness( fileData, seeds, target )
     [trainingData,labelData] = assambleTrainingData(seeds);
     forest = Stochastic_Bosque(trainingData,labelData);
     
-    [esl, posl, mul, sil] = getMinHMTLength( [seeds, fileData ]);
+    [esl, posl, mul, sil] = getMinHMTLength( [seeds.hmt, fileData.hmt ]);
 
     hmt.array = [hmt.es(1:esl) hmt.pos(1:posl)' hmt.mu(1:mul) hmt.si(1:sil)];
     
@@ -27,8 +27,8 @@ function [ fitness ] = evaluateFitness( fileData, seeds, target )
     
     
     for i=1:length(labelData)
-        labels{labelData(i)}.label = seeds{i}.label;
-        if strcmp(seeds{i}.label, target)
+        labels(labelData(i)).label = seeds(i).label;
+        if strcmp(seeds(i).label, target)
             trg_index = labelData(i);
         end
     end

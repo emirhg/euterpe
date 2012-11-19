@@ -14,7 +14,7 @@
     generation_count = 0;
     
     fps = 12;
-    speedup = 2^7;
+    speedup = 1;
     
     if exist(['Population-', session, '.mat'], 'file')
         load(['Population-', session, '.mat']);
@@ -23,7 +23,10 @@
         population(1).label = '';
         population(1).fitness = 0;  
         population(1).hmt.iter=0;
+        population(1).nmat = midi_phenotype(population(end).chromosome, 2);
+        population(1).wave = waveform_padding(midi_waveform(population(1).nmat,speedup));
+        population(1).dwt = wavelet_transform(population(end).wave);
     end
 %    load KnowledgeBase;
     
-    desired_style = 'Tarrega Francisco';
+    desired_style = 'Francisco Tarrega';

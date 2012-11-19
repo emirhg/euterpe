@@ -5,7 +5,7 @@ function [ result,conffidence,labels ] = evaluateSample( fileData, seeds )
     [trainingData,labelData] = assambleTrainingData(seeds);
     forest = Stochastic_Bosque(trainingData,labelData);
     
-    [esl, posl, mul, sil] = getMinHMTLength( [seeds, fileData ]);
+    [esl, posl, mul, sil] = getMinHMTLength( [seeds.hmt, fileData.hmt ]);
 
     hmt.array = [hmt.es(1:esl) hmt.pos(1:posl)' hmt.mu(1:mul) hmt.si(1:sil)];
     
@@ -25,7 +25,7 @@ function [ result,conffidence,labels ] = evaluateSample( fileData, seeds )
     
     
     for i=1:length(labelData)
-        labels{labelData(i)}.label = seeds{i}.label;
+        labels(labelData(i)).label = seeds(i).label;
     end
     
 end

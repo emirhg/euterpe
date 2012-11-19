@@ -40,9 +40,9 @@ while population(end).fitness < 0.98
     population = processData(population, 20);
 
     for i=1:length(population)
-        [index, conffidence, labels]= evaluateSample(population(i), data);
-        population(i).label = labels{index}.label;
-        population(i).fitness = evaluateFitness(population(i), data,desired_style);
+        [index, conffidence, labels]= evaluateSample(population(i), Knowledge);
+        population(i).label = labels(index).label;
+        population(i).fitness = evaluateFitness(population(i), Knowledge,desired_style);
     end
     fprintf(1,'Ordenando la poblaci�n\n');
     population = sortstruct(population,3);

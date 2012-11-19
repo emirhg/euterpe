@@ -1,9 +1,9 @@
-function [esl, posl, mul, sil] = getMinHMTLength( seeds )
+function [esl, posl, mul, sil] = getMinHMTLength( hmt_array )
 %getMinHMTLength Summary of this function goes here
 %   Detailed explanation goes here
 
-for  i=1:length(seeds)
-    hmt = seeds{i}.hmt;
+for  i=1:length(hmt_array)
+    hmt = hmt_array(i);
     if (not(exist('esl','var')))
         esl = length(hmt.es(:)');
     else
