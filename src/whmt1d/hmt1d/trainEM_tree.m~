@@ -23,7 +23,6 @@ L = log2(N);
     end
     
 % get starting points for model parameters
-    fprintf(1,'Obtaining Starting Points for model parameters\n');
     [ES, POS, MU, SI] = startPoints(w, L, M);
 
 % loop until we have converged
@@ -32,7 +31,7 @@ L = log2(N);
     converged = 0;
     iter = 0;
     while (converged == 0)
-        fprintf(1,'-- %d Iteration--\n', iter+1);
+        
       pSio = pSi;
 
 % "E step"
@@ -90,9 +89,8 @@ L = log2(N);
 
       % test for convergence
       iter = iter + 1;
-    if (iter >= maxIter)
+%      if (iter >= maxIter)
         converged = 1;
-      end
         err1 = abs(SI-SIo);
         err2 = abs(pS-pSo);
         err3 = abs(pSi-pSio);
@@ -100,6 +98,7 @@ L = log2(N);
         max(err2(:))
         max(err3(:))
         fprintf(1,'Iteración %d\t Error: %d\t%d\t%d\n', iter, max(err1(:)), max(err2(:)), max(err3(:)));
+%      end
 
       %keyboard
     end   % while loop

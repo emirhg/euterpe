@@ -104,10 +104,8 @@ gamma(:,1) = zeros(M,1);
 
 if (scl ~= 0)
   lk = sum(log10(c(2:end))) - log10(2);
-  %fprintf('alpha = %f\nbeta = %f\n likelihood %f\n', alpha(:,2), beta(:,2), lk)
 else 
   lk = sum(alpha(:,2).*beta(:,2));
-  %fprintf('alpha = %f\nbeta = %f\n likelihood %f\n', alpha(:,2), beta(:,2), lk)
 end
 
 %keyboard

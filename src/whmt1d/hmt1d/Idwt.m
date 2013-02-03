@@ -1,4 +1,4 @@
-function w = Idwt(x,h,L)
+function w = Idwt(x,h,L);
 % w = Idwt(x,h,L);
 %
 % Discrete Orthogonal Wavelet Transform
