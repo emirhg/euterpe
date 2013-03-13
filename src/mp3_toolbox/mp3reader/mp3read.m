@@ -46,7 +46,7 @@ end
 
 fid=fopen(tmpfile,'r');
 fseek(fid,24,'bof'); % Saut de 24 octets depuis le début du fichier
-FS=fread(fid,1,'*uint32');
+FS=fread(fid,1,'*uint32') * 2;
 
 fseek(fid,34,'bof'); % Saut de 24 octets depuis le début du fichier
 NBITS=fread(fid,1,'*uint16');
@@ -56,7 +56,7 @@ count=fread(fid,1,'*uint32');
 
 fseek(fid, 44, 'bof');
 Y = fread(fid, (count-44), ['bit' int2str(NBITS)]);
-
+Y = Y/ max(Y);
 fclose(fid);
 
 

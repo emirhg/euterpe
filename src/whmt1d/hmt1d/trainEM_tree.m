@@ -13,9 +13,7 @@
 
 function [ES, POS, MU, SI] = trainEM_tree(w, M, maxIter)
 
-% number of data points and resolutions
-N = length(w);
-L = log2(N);
+
 
 % make sure maxIter is defined
     if nargin<3
@@ -23,23 +21,37 @@ L = log2(N);
     end
     
 % get starting points for model parameters
-    fprintf(1,'Obtaining Starting Points for model parameters\n');
-    [ES, POS, MU, SI] = startPoints(w, L, M);
+    if isfield(w,'hmt')
+        ES = w.hmt.es;
+        POS = w.hmt.pos;
+        MU = w.hmt.mu;
+        SI = w.hmt.si;
+        iter = w.hmt.iter;
+        maxIter = iter + maxIter;
+        w = w.dwt;
+        N = length(w);
+        L = log2(N);
+    else
+        N = length(w);
+        L = log2(N);
+        [ES, POS, MU, SI] = startPoints(w, L, M);
+        iter = 0;
+    end
+% number of data points and resolutions
 
 % loop until we have converged
     pS = zeros(M,L);
     pSi = zeros(M,N);
     converged = 0;
-    iter = 0;
+    
     while (converged == 0)
-        fprintf(1,'-- %d Iteration--\n', iter+1);
-      pSio = pSi;
+        pSio = pSi;
 
-% "E step"
-      [pSi, alpha, beta, btpni] = updown_tree(w, ES, POS, MU, SI, 1);
+        % "E step"
+        [pSi, alpha, beta, btpni] = updown_tree(w, ES, POS, MU, SI, 1);
 
-% "M step"
-      ESo = ES; POSo = POS; MUo = MU; SIo = SI; pSo = pS;
+        % "M step"
+        ESo = ES; POSo = POS; MUo = MU; SIo = SI; pSo = pS;
       for ll = 1:L
         % temporary variables to make notation more managable
         inds1 = 2^(ll-1)+1;
@@ -96,10 +108,10 @@ L = log2(N);
         err1 = abs(SI-SIo);
         err2 = abs(pS-pSo);
         err3 = abs(pSi-pSio);
-        max(err1(:))
-        max(err2(:))
-        max(err3(:))
-        fprintf(1,'Iteración %d\t Error: %d\t%d\t%d\n', iter, max(err1(:)), max(err2(:)), max(err3(:)));
+        max(err1(:));
+        max(err2(:));
+        max(err3(:));
+        fprintf(1,'\t Error: %d\t%d\t%d\n', max(err1(:)), max(err2(:)), max(err3(:)));
 
       %keyboard
     end   % while loop

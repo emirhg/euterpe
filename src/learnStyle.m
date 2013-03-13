@@ -42,7 +42,11 @@ for (i=1:length(FILES))
 end
 
 toc(startP);
+tic();
 
+data=processData(data,'iter',25);
+
+toc;
 end
 function [y, FFREQ] = subsampling(w, FREQ, FFREQ)
 

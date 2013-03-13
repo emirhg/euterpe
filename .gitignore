@@ -1,0 +1,10 @@
+#MATLAB Worksapce files
+*.mat
+
+#Music Files
+*.mp3
+*.mid
+*.midi
+
+#Temporary files
+*~
