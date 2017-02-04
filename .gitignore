@@ -1,0 +1,17 @@
+#MATLAB Worksapce files
+*.mat
+
+#Music Files
+*.mp3
+*.mid
+*.midi
+*.wav
+
+#Temporary files
+*~
+
+#Other data
+data
+publicaciones.tar.gz
+doc
+html

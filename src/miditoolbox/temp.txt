@@ -1,0 +1,57 @@
+MFile 1 2 120
+MTrk
+0 TimeSig 4/4 24 8
+0 Tempo 612245
+0 Meta TrkEnd
+TrkEnd
+MTrk
+0 On ch=1 n=64 v=82
+108 On ch=1 n=64 v=0
+120 On ch=1 n=71 v=89
+228 On ch=1 n=71 v=0
+240 On ch=1 n=71 v=82
+294 On ch=1 n=71 v=0
+300 On ch=1 n=69 v=70
+354 On ch=1 n=69 v=0
+360 On ch=1 n=67 v=72
+414 On ch=1 n=67 v=0
+420 On ch=1 n=66 v=72
+474 On ch=1 n=66 v=0
+480 On ch=1 n=64 v=70
+588 On ch=1 n=64 v=0
+600 On ch=1 n=66 v=79
+708 On ch=1 n=66 v=0
+720 On ch=1 n=67 v=85
+828 On ch=1 n=67 v=0
+840 On ch=1 n=66 v=72
+1050 On ch=1 n=66 v=0
+1080 On ch=1 n=64 v=74
+1134 On ch=1 n=64 v=0
+1140 On ch=1 n=67 v=81
+1194 On ch=1 n=67 v=0
+1200 On ch=1 n=71 v=83
+1308 On ch=1 n=71 v=0
+1320 On ch=1 n=71 v=78
+1374 On ch=1 n=71 v=0
+1380 On ch=1 n=69 v=73
+1434 On ch=1 n=69 v=0
+1440 On ch=1 n=67 v=71
+1494 On ch=1 n=67 v=0
+1500 On ch=1 n=66 v=69
+1554 On ch=1 n=66 v=0
+1560 On ch=1 n=67 v=83
+1614 On ch=1 n=67 v=0
+1620 On ch=1 n=66 v=72
+1674 On ch=1 n=66 v=0
+1680 On ch=1 n=64 v=74
+1734 On ch=1 n=64 v=0
+1740 On ch=1 n=63 v=70
+1794 On ch=1 n=63 v=0
+1800 On ch=1 n=64 v=82
+1908 On ch=1 n=64 v=0
+1920 On ch=1 n=64 v=75
+2136 On ch=1 n=64 v=0
+2136 On ch=1 n=60 v=0
+2256 On ch=1 n=60 v=0
+2256 Meta TrkEnd
+TrkEnd
