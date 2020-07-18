@@ -1,0 +1,3 @@
+[submodule "lib/vrmpx/templateTesisITAM"]
+	path = lib/vrmpx/templateTesisITAM
+	url = https://github.com/vrmpx/templateTesisITAM.git
