@@ -7,4 +7,5 @@
 *.toc
 *.blg
 *.bbl
+/*.pdf
 *.synctex.gz
