@@ -3,10 +3,10 @@
 # Author: Emir Herrera González
 # Licencia GNU GPLv2
 
-export TEXINPUTS=.:./lib/vrmpx/templateTesisITAM/:./lib/vrmpx/templateTesisITAM/Figures:
+export TEXINPUTS=./tesis:./tesis/lib/vrmpx/templateTesisITAM/:./tesis/lib/vrmpx/templateTesisITAM/Figures:
 
 all: doc
 
 doc:
-	pdflatex main.tex
+	pdflatex --output-directory=./output tesis/main.tex
 
