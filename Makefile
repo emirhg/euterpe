@@ -5,4 +5,8 @@
 
 export TEXINPUTS=.:./lib/vrmpx/templateTesisITAM/:./lib/vrmpx/templateTesisITAM/Figures:
 
-pdflatex main.tex
+all: doc
+
+doc:
+	pdflatex main.tex
+
