@@ -7,6 +7,6 @@
 *.toc
 *.blg
 *.bbl
-/*.pdf
-/output/
 *.synctex.gz
+/tesis/output/
+/tesis/main.pdf
