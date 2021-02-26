@@ -1,3 +1,7 @@
+# Sensitive data
+.env
+
+# Auxiliary intermediate files
 *.aux
 *.lof
 *.toc
@@ -8,5 +12,8 @@
 *.blg
 *.bbl
 *.synctex.gz
+
+# Output files
 /tesis/output/
+/output/
 /tesis/main.pdf
