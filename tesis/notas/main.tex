@@ -1,0 +1,119 @@
+% Tesis ITAM CLASS -- version 0.1 (13 - Abr - 2015)
+% Clase para las tesis del ITAM
+%
+% 13 - Abr - 2015 	Victor Martinez 	victor.martinez (at) itam.mx
+% LICENSE: Creative Commons SA-BY 3.0
+%
+%
+% Este documento presenta un ejemplo de uso de la plantilla
+% El estudiante es libre de modificar este archivo a su gusto
+%
+\documentclass{tesisITAM}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{comment}
+\usepackage{multirow}
+\usepackage{hyperref}
+%\usepackage{cite}
+%\usepackage[]{apacite}
+%\usepackage{natbib}
+
+
+%\usepackage{csquotes}
+%\usepackage[style=apa]{biblatex}
+
+
+\title{Creatividad artificial: imitación de estilos musicales}
+\author{Emir Herrera González}
+\degree{Ing. en Telemática}
+\advisor{Andrés Gómez de Silva}
+\year{2015}
+
+\begin{document}
+
+	\pagenumbering{gobble}
+	\maketitle
+	\publicationrights
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% ABSTRACT
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\begin{abstract}{spanish}
+	\end{abstract}
+
+	\begin{abstract}{english}
+	\end{abstract}
+
+
+	\selectlanguage{spanish}
+	\setcounter{page}{1}
+	\pagenumbering{roman}
+
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	\newpage
+
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% CONTENT
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+		\chapter{Análisis del problema}
+			\label{ch:analisis}
+
+			\input{draft/introduccion}
+			\input{draft/objetivo_y_alcance}
+			\input{draft/arte}
+			\input{draft/estado_del_arte}
+			\input{draft/midi}
+
+		%		1. Análisis del problema
+		%			* Hipótesis
+		%			  * Una computadora puede mostrar carácteristicas creativas.
+		%			  * Una computadora es capaz de generar una melodía utilizando algoritmos genéticos.
+		%			* Objetivo
+		%			* Marco teórico
+		%		2. Investigación
+    \input{draft/composicion}
+    \input{draft/creatividad}
+    \input{draft/metodologia}
+		%		3. Diseño de la solución
+		%			* Desarrollo
+		%			  * Metodología
+		%			  * Experimentación
+		%			  * Resultados
+		\input{draft/clasificacion}
+    \input{draft/resultados}
+		%		4. Análisis de los resultados
+		%			* Conclusión
+
+
+
+
+	% \input{Chapters/relatedwork}
+
+	% \input{Chapters/method}
+
+	% \input{Chapters/results}
+
+	% \input{Chapters/conclusions}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% APPENDIX
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\appendix
+	% \input{Chapters/appendixA}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% BIBLIOGRAPHY
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\clearpage
+	\addcontentsline{toc}{chapter}{Bibliografía} %Añadimos la bibliografia a la lista de contenidos.
+	\bibliographystyle{plain}
+	\bibliography{bibliografia}
+
+\end{document}

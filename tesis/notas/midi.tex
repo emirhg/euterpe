@@ -1,0 +1,27 @@
+\section{El formato MIDI}
+	El formato MIDI permite representar en forma digital las notas tocadas por un instrumento musical en forma de eventos. El un MIDI puede representar hasta 16 canales, cada uno asociado a un instrumento. Cuando un instrumento sólo puede producir una sola nota, se dice que es un instrumentono monótono
+
+\begin{verbatim}
+>> [max(tarreaga);min(tarreaga);max(tarreaga)-min(tarreaga)]
+
+ans =
+
+	379.6250    3.0000    2.0000   88.0000  100.0000  197.5583    1.9167
+				 0    0.1250    1.0000   40.0000  100.0000         0    0.0625
+	379.6250    2.8750    1.0000   48.0000         0  197.5583    1.8542
+\end{verbatim}
+
+\section {Conteo del dominio del problema}
+  Definir el dominio del problema (espacio musical)
+    ¿Cuantas posibilidades existen para componer una melodía?
+
+    Las posibilidades de la música extrictamente hablando son infinitas, sin embargo podemos acotar el dominio acotando su extensión temporal y la cantidad de notas a elegir
+
+    ¿Cuántos beats existen en una grabación de duración T?
+      Si un beat tiene una duración t,
+
+		El número de beats n se obtiene mediante la fórmula \eqref{eq:n}
+
+			\begin{equation} \label{eq:n}
+				n = \frac{T}{t}
+			\end{equation}

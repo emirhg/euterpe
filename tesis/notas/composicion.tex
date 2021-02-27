@@ -1,0 +1,26 @@
+\chapter{Composición musical}
+    \section{Figura Musical}
+
+        \paragraph{Una figura en el pentagrama, represneta la nota, su posición y duración temporal. Es posible entonces representar a cada nota musical cómo un objeto con tres propiedades escenciales, su frecuencia, el momento de inicio y el fomento final.}
+
+        \paragraph{Un gen que mutó recientemente tiene menos posibilidades de ser elegido para la siguiente mutación. Los puntos de cruce serán escogidos con base al fitness de cada individuo, el individuo con mayor fitness le heradará los genes predominantes a la siguiente generación.}
+
+        \subsection{Cruces}
+          \paragraph{El punto de cruce se elige en función de una distribución normal cuya media es el resultado de la función fitness, normalizado, de el primer fenotipo}
+
+          \begin{equation}
+              \mu = \frac{fitness(fenotipo_1)}{fitness(fenotipo_1) + fitness(fenotipo_2)}
+          \end{equation}
+          \begin{equation}
+              CP \sim N(\mu,1)
+          \end{equation}
+
+          \paragraph{El primer fenotipo será el que aporte los genes a la izquierda. El nuevo genotipo resulta de cortar en la fracción CP a los dos fenotipos, y uniendo el lado izquiero del $fenotipo_{1}$ con la parte derecha del $fenotipo_{2}$. El gen intermedio, el que corresponde al punto de corte se recalcula, promediando los valors de ambos fenotipos para el valor de la nota y suduración, la posición temporal es la que correspondé al $fenotipo_{1}$. Las posiciones temporales del $fenotipo_{2}$ se recalculan antes de aderir los genes al nuevo fenotipo siguiendo la formula:}
+
+          \begin{equation}
+              \overline{T} = \overline{T_{2}}  - min(\overline{T_{2}}) + max(\overline{T_{1}})
+          \end{equation}
+
+    \section {Armonia}
+    \section {Definición del estílo}
+    \section {Contorno melódico}
