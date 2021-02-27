@@ -6,21 +6,30 @@
 %\subsection{Percepción}
 
 \subsection{Sonido}
-    \paragraph{El ser humano es capaz de escuchar por medio del oido como consecuencia de las vibraciones que se reproducen en el tímpano. Estás vibraciones son producto de la fuerza ejercida por el aire en el organo. Cuando se ejerce una presión en un medio elastico tal que este oscile, se dice que las ondas producidas por el movimiento del material son sonido. Por tratarse de un organo elástico, el tímpano se puede estirar, produciendo en el una oscilación entre dos puntos. El tiempo durante el cuál el timpano es desplazado de su estado de reposo hasta un punto $a$, libera su energia potencial, alcanza un mínimo $b$ y regresa a el punto dónde solia estar en reposo se conoce cómo periodo, y oscilación o ciclo al movimiento descrito el cuál tiene una forma senoidal. Utilizamos los Hertz para medir las oscilacianes que se producen en un segundo, i.e., cuando la oscilación completa se produce en un lapso de 1 segundo, se dice que la señal u onda sonora que llega al timpano tiene una frecuencia $f = 1 Hz$. La función $$f(f_0) = sin(2*\pi*f_0*t)$$ describe una onda que oscila a una frecuencia $f_0$. Las limitaciones fisiológicas del organo auditivo sólo nos permiten percibir las oscilaciones que ocurren entre 20 Hz y 20KHz, este rango de frecuencias se conoce como espectro audible y podemos definirlo cómo el conjunto $$ E_a = [20, 20000] Hz$$}
-    
-    
-    \paragraph{En el mundo real los sonidos que escuchamos están compuestos por multiples frecuencias, sino que están compuestos de multiples frecuencias. En adelante cuando hablemos de sonidos nos referiremos a estos sonidos compuestos audibles por el ser humano.}
-    
-    \paragraph{En teoria musical se dice que el sonido tiene 4 propiedades: la altura o tono; la intensidad, el timbre o color; y la duración. El tono es una característica psicoacústica del sonido, se refiere a la distinción entre un sonido grave y uno agudo, mientras que la frecuencia es una medida objetiva del sonido, el tono es subjetivo, sin embargo existen estandares para nombrar los tonos según su frecuencia más baja, llamada frecuencia fundamental; el color se refiere a las frecuencias que se agregan al sonido cómo resultado de la resonancia de la frecuencia fundamental dentro del amplificador sonoro, es lo que nos permite diferenciar al emisor de un sonido con la misma frecuencia fundamental, un \textbf{La} tiene un timbre diferente si es interpretado en una flauta o en piano; la intensidad indica la fuerza con la que un sonido es producido; y la duración el intervalo de tiempo durante el cuál existe.}
+    \paragraph{El ser humano es capaz de escuchar por medio del oído como consecuencia de las vibraciones que se reproducen en el tímpano. Estas vibraciones son producto de la fuerza ejercida por el aire en el órgano. Cuando se ejerce una presión en un medio elástico tal que éste oscile, se dice que las ondas producidas por el movimiento del material son sonido. Por tratarse de un órgano elástico, el tímpano se puede estirar, produciendo en él una oscilación entre dos puntos. El tiempo durante el cual el timpano es desplazado de su estado de reposo hasta un punto $a$, libera su energia potencial, alcanza un mínimo $b$ y regresa al punto donde solia estar en reposo se conoce como periodo, y oscilación o ciclo al movimiento descrito, el cual tiene una forma senoidal.}
+
+    \paragraph{Utilizamos los Hertz para medir las oscilaciones que se producen en un segundo, i.e., cuando la oscilación completa se produce en un lapso de 1 segundo, se dice que la señal u onda sonora que llega al tímpano tiene una frecuencia $f = 1 Hz$. La función $$f(f_0) = sin(2*\pi*f_0*t)$$
+    % REVIEW: ¿Qué representan t, f0, etc.?
+    describe una onda que oscila a una frecuencia $f_0$. Las limitaciones fisiológicas del organo auditivo sólo nos permiten percibir las oscilaciones que ocurren entre 20 Hz y 20KHz. Este rango de frecuencias se conoce como espectro audible y podemos definirlo como el conjunto $$ E_a = [20, 20000] Hz$$}
 
 
-    \paragraph{...}
-    
-    \paragraph{Un acorde es un sonido compuesto por muchos tonos simultaneos. Vemos que podemos describir la música cómo una secuencia de silencios, tonos y acordes.}
+    \paragraph{En el mundo real los sonidos que escuchamos están compuestos por múltiples frecuencias. En adelante cuando hablemos de sonidos nos referiremos a estos sonidos compuestos audibles por el ser humano.}
 
-    \paragraph{...}
-    
-    \paragraph{Se propone modelar la música cómo una Cadena de Markov en la que cada estado representa un sonido.}
+    \paragraph{En teoría musical se dice que el sonido tiene 4 propiedades: la altura o tono; la intensidad, el timbre o color; y la duración. El tono es una característica psicoacústica del sonido. Se refiere a la distinción entre un sonido grave y uno agudo, mientras que la frecuencia es una medida objetiva del sonido, el tono es subjetivo. Sin embargo existen estándares para nombrar los tonos según su frecuencia más baja, llamada frecuencia fundamental. El color se refiere a las frecuencias que se agregan al sonido como resultado de la resonancia de la frecuencia fundamental dentro del amplificador sonoro.
+    %TODO: ¿Cuál?  No has mencionado ningún amplificador sonoro antes, por lo que no puedes hablar de él aquí (sin antes dar alguna explicación)...
+    Es lo que nos permite diferenciar al emisor de un sonido con la misma frecuencia fundamental.La nota \textbf{La} tiene un timbre diferente si es interpretado en una flauta que si lo es en un piano. La intensidad indica la fuerza con la que un sonido es producido. La duración es el intervalo de tiempo durante el cual existe un sonido.}
+
+
+    \paragraph{Un acorde es un sonido compuesto por muchos tonos simultáneos. Vemos que podemos describir la música como una secuencia de silencios, tonos y acordes.}
+
+    \paragraph{Se propone modelar la música como una cadena de Markov en la que cada estado representa un sonido.}
+% REVIEW: Todas las definiciones de conceptos previos a este punto realmente son necesarias sólo si se va a hablar de estos conceptos (o si se van a utilizar en la discusión de algún otro tema) más adelante...
+
+% REVIEW: ¿Por qué modelar la música como una cadena de Markov?  ¿Qué características tienen las cadenas de Markov que hacen que tenga sentido, que sea útil, emplearlas en el modelado de la música?  ¿No hay otras formas de modelar la música?  En caso afirmativo, ¿qué ventaja(s) tiene(n) las cadenas de Markov sobre las otras opciones?  Todo esto habría que discutir aquí...
 
 \subsection{MIDI}
-Un archivo MIDI permite grabar y reproducir los eventos acústicos de un instrumento musical. El MIDI almacena la información de un instrumento en mensajes de eventos, cada evento contiene información de la frecuencia $f$ y posición temporal $t$ de la nota interpretada con un instrumento musical (que cuente con interfaz para MIDI).
+\paragraph{Un archivo MIDI permite grabar y reproducir los eventos acústicos de un instrumento musical.
+% REVIEW: ¿No se guardan en el mismo archivo MIDI los datos de varios instrumentos musicales (si es que se usaron muchos en una pieza)?
+El MIDI almacena la información de un instrumento en mensajes
+% REVIEW: ¿Qué significa "mensaje" en este contexto?
+de eventos. Cada evento contiene información de la frecuencia $f$ y posición temporal $t$ de la nota interpretada con un instrumento musical (que cuente con interfaz para MIDI).}
